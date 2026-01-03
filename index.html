@@ -1,0 +1,136 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>inqapool | Ambient Synthesis Artist</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600&family=Inter:wght@200;300;400;500&family=JetBrains+Mono:wght@100;200;400&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --color-bg: #e5e5e5;
+            --color-text: #1a1a1a;
+            --color-accent: #a78bfa;
+            --color-border: rgba(0, 0, 0, 0.08);
+        }
+        
+        * { box-sizing: border-box; }
+        
+        body {
+            background-color: var(--color-bg);
+            color: var(--color-text);
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            letter-spacing: -0.01em;
+        }
+
+        .font-serif-display { 
+            font-family: 'Cormorant Garamond', serif; 
+        }
+        
+        .font-mono-tech { 
+            font-family: 'JetBrains Mono', monospace; 
+        }
+
+        /* The main purple outer frame */
+        .page-frame {
+            border: 1px solid var(--color-accent);
+            margin: 12px;
+            min-height: calc(100vh - 24px);
+            display: flex;
+            flex-direction: column;
+            background-color: var(--color-bg);
+            position: relative;
+            z-index: 10;
+        }
+
+        /* Logo styling - lowercase and spaced */
+        .logo-text {
+            font-family: 'Cormorant Garamond', serif;
+            font-style: italic;
+            font-weight: 300;
+            letter-spacing: 0.15em;
+            text-transform: lowercase;
+        }
+
+        /* Image Masking & Effects */
+        .image-reveal {
+            overflow: hidden;
+            position: relative;
+            background: #d1d1d1;
+        }
+        .image-reveal img {
+            filter: grayscale(100%) contrast(1.05) brightness(1.02);
+            transition: transform 1.2s cubic-bezier(0.16, 1, 0.3, 1);
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .image-reveal:hover img {
+            transform: scale(1.05);
+        }
+
+        /* Reveal Animation */
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 1.2s cubic-bezier(0.16, 1, 0.3, 1), transform 1.2s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .delay-100 { transition-delay: 100ms; }
+        .delay-200 { transition-delay: 200ms; }
+        .delay-300 { transition-delay: 300ms; }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar { width: 4px; }
+        ::-webkit-scrollbar-track { background: var(--color-bg); }
+        ::-webkit-scrollbar-thumb { background: var(--color-accent); }
+
+        @media (max-width: 768px) {
+            .page-frame {
+                border-width: 1px;
+                margin: 8px;
+                min-height: calc(100vh - 16px);
+            }
+        }
+
+        /* Line decorative elements */
+        .decorative-line {
+            height: 1px;
+            background: var(--color-border);
+            width: 100%;
+        }
+
+        .vertical-line {
+            width: 1px;
+            background: var(--color-border);
+            height: 100%;
+        }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@19.0.0",
+    "react-dom": "https://esm.sh/react-dom@19.0.0",
+    "react-dom/client": "https://esm.sh/react-dom@19.0.0/client",
+    "lucide-react": "https://esm.sh/lucide-react@0.471.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/"
+  }
+}
+</script>
+</head>
+<body>
+    <div id="root"></div>
+    <script type="module" src="index.tsx"></script>
+</body>
+</html>

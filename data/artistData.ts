@@ -7,11 +7,16 @@ const image = (file: string) => new URL(`./img/${file}`, import.meta.url).href;
 
 export const ARTIST_DATA = {
   brand: "INQAPOOL",
-  name: "Risako Taguchi",
+  // name: "Risako Taguchi",
   role: "Ambient Artist",
   tagline: "Live / Sound Design",
   location: "Tokyo, Japan",
   email: "contact@inqapool.com",
+  socialLinks: [
+    { name: 'Instagram', href: 'https://www.instagram.com/inqapool?igsh=MWo4bTBzeWNuZnZuZw%3D%3D&utm_source=qr' },
+    { name: 'Bandcamp', href: 'https://inqapool.bandcamp.com' },
+    { name: 'Soundcloud', href: 'https://on.soundcloud.com/c9kAFS9wD1DlwalPzl' },
+  ],
 
   // 自己紹介文（Aboutセクション用）
   bio: [

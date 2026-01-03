@@ -13,7 +13,7 @@ export const Hero: React.FC = () => {
     <section className="min-h-screen flex flex-col lg:flex-row pt-52 pb-32 px-10 md:px-20 lg:px-28 gap-20 lg:gap-32 items-start justify-between relative">
 
       {/* 左側：イメージスタック（幅を少し絞って余白を確保） */}
-      <div className="w-full lg:w-[40%] flex flex-col relative z-10">
+      <div className="w-full lg:w-[40%] flex flex-col relative z-10 -mt-6 lg:-mt-10">
         {/* メインイメージ */}
         <div className="w-full aspect-[10/14] overflow-hidden grayscale bg-neutral-300 shadow-2xl">
           <img

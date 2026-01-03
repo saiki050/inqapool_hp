@@ -7,7 +7,7 @@ export const Performance: React.FC = () => (
     <div className="max-w-6xl mx-auto">
       <h2 className="font-serif text-8xl italic mb-20 opacity-20 select-none">Performance</h2>
       <div className="grid md:grid-cols-3 gap-12">
-        {ARTIST_DATA.works.map((work, i) => (
+        {ARTIST_DATA.performance.map((work, i) => (
           <div key={i} className="group cursor-pointer">
             <div className="aspect-square overflow-hidden bg-neutral-900 mb-6 grayscale group-hover:grayscale-0 transition-all duration-700">
               <img

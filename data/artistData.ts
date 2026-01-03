@@ -3,7 +3,7 @@
  * アーティスト「inqapool」の全てのデータを管理するファイルです。
  * 情報を更新したい時は、このファイルを編集するだけでサイト全体に反映されます。
  */
-const COVER_STRUCTURAL_SILENCE = new URL('./img/IMG_7396.jpeg', import.meta.url).href;
+const COVER_STRUCTURAL_SILENCE = new URL('./img/949E2735-78EC-488E-8A14-F7499E2C64B9.jpeg', import.meta.url).href;
 const COVER_MONOLITHIC_DRIFT = new URL('./img/IMG_4952.jpeg', import.meta.url).href;
 const COVER_RESONANCE_ARCHITECTURE = new URL('./img/IMG_3714.jpeg', import.meta.url).href;
 
@@ -22,7 +22,7 @@ export const ARTIST_DATA = {
   ],
 
   // 作品リスト（Performanceセクション用）
-  works: [
+  performance: [
     {
       title: 'Structural Silence',
       year: '2024',

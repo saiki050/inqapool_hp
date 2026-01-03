@@ -4,6 +4,18 @@
  * サイト全体の「基礎」となるデザインをここに書きます。
  */
 
+/* 0. フォントの読み込み */
+@font-face {
+  font-family: 'Brown Sugar';
+  src:
+    url('/fonts/Brown-Sugar/Brown-Sugar-Regular.woff2') format('woff2'),
+    url('/fonts/Brown-Sugar/Brown-Sugar-Regular.otf') format('opentype'),
+    url('/fonts/Brown-Sugar/Brown-Sugar-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
 /* 1. サイト全体の基本設定 */
 body {
   background-color: #e5e5e5; /* 落ち着いたグレーの背景 */
@@ -18,7 +30,7 @@ body {
 /* 2. フォントの使い分け用クラス */
 /* 高級感のある明朝体（セリフ体） */
 .font-serif {
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Brown Sugar', 'Cormorant Garamond', serif;
 }
 
 /* モダンで読みやすいゴシック体（サンセリフ体） */

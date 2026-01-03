@@ -2,6 +2,9 @@
 import React from 'react';
 import { ARTIST_DATA } from '../data/artistData';
 
+const HERO_PRIMARY = new URL('../data/img/IMG_0705.png', import.meta.url).href;
+const HERO_SECONDARY = new URL('../data/img/IMG_0830.png', import.meta.url).href;
+
 /**
  * ヒーローセクション
  * 
@@ -22,18 +25,17 @@ export const Hero = () => {
         {/* 上段画像：シンプルに白黒で表示 */}
         <div className="w-full aspect-[16/10] overflow-hidden grayscale">
           <img 
-            src="https://images.unsplash.com/photo-1542665952-14513db15293?q=80&w=1200" 
+            src={HERO_PRIMARY} 
             alt="Architecture View" 
             className="w-full h-full object-cover"
           />
         </div>
         
-        {/* 下段画像：紫色の枠線（border-[6px]）でブランドカラーを強調 */}
-        <div className="w-full aspect-[16/10] overflow-hidden border-[6px] border-[#a78bfa] grayscale">
+        <div className="w-full aspect-[16/10] overflow-hidden">
           <img 
-            src="https://images.unsplash.com/photo-1503387762-592dee58c460?q=80&w=1200" 
+            src={HERO_SECONDARY} 
             alt="Architecture Detail" 
-            className="w-full h-full object-cover"
+            className="w-full h-full object-cover grayscale"
           />
         </div>
       </div>

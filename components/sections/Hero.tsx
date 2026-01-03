@@ -2,7 +2,7 @@
 import React from 'react';
 import { ARTIST_DATA } from '../../data/artistData';
 
-const HERO_STACK_PRIMARY = new URL('../../data/img/4E550DA4-AC9A-4D23-8C9C-1767DC17A95C.jpeg', import.meta.url).href;
+const HERO_STACK_PRIMARY = new URL('../../data/img/prof_01.jpeg', import.meta.url).href;
 
 /**
  * 2カラム構成のヒーローセクション。

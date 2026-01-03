@@ -3,9 +3,7 @@
  * アーティスト「inqapool」の全てのデータを管理するファイルです。
  * 情報を更新したい時は、このファイルを編集するだけでサイト全体に反映されます。
  */
-const COVER_STRUCTURAL_SILENCE = new URL('./img/949E2735-78EC-488E-8A14-F7499E2C64B9.jpeg', import.meta.url).href;
-const COVER_MONOLITHIC_DRIFT = new URL('./img/IMG_4952.jpeg', import.meta.url).href;
-const COVER_RESONANCE_ARCHITECTURE = new URL('./img/IMG_3714.jpeg', import.meta.url).href;
+const image = (file: string) => new URL(`./img/${file}`, import.meta.url).href;
 
 export const ARTIST_DATA = {
   brand: "INQAPOOL",
@@ -22,25 +20,25 @@ export const ARTIST_DATA = {
   ],
 
   // 作品リスト（Performanceセクション用）
-  performance: [
+  performances: [
     {
-      title: 'Structural Silence',
-      year: '2024',
-      type: 'LP',
-      cover: COVER_STRUCTURAL_SILENCE,
+      title: 'rural',
+      year: '2025',
+      type: 'Live Installation',
+      images: [
+        image('rural_01.jpeg'),
+      ],
     },
     {
-      title: 'Monolithic Drift',
-      year: '2023',
-      type: 'EP',
-      cover: COVER_MONOLITHIC_DRIFT,
+      title: 'KASAMORI PASSING',
+      year: '2025',
+      type: 'Kasamori temple',
+      images: [
+        image('kasamori_01.jpeg'),
+        image('kasamori_02.jpeg'),
+        image('kasamori_03.jpeg'),
+      ],
     },
-    {
-      title: 'Resonance Architecture',
-      year: '2023',
-      type: 'Single',
-      cover: COVER_RESONANCE_ARCHITECTURE,
-    }
   ],
 
   // 使用機材（Studioセクション用）

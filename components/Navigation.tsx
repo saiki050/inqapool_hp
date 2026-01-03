@@ -6,7 +6,7 @@ import React from 'react';
  * スムーズに各セクションへ移動するためのリンクを提供します。
  */
 export const Navigation = () => {
-  const menuItems = ['About', 'Works', 'Studio', 'Contact'];
+  const menuItems = ['About', 'Performance', 'Studio', 'Contact'];
 
   return (
     <nav className="fixed top-8 left-0 w-full z-50 px-12 pointer-events-none">

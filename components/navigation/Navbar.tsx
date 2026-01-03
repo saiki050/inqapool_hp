@@ -2,7 +2,7 @@
 import React from 'react';
 
 export const Navbar: React.FC = () => {
-  const menuItems = ['About', 'Works', 'Studio', 'Contact'];
+  const menuItems = ['About', 'Performance', 'Studio', 'Contact'];
 
   return (
     <nav className="fixed top-0 left-0 w-full z-[100] px-10 md:px-20 pt-12 pb-8 pointer-events-none">

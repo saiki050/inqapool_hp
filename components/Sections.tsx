@@ -17,12 +17,12 @@ export const About = () => (
 );
 
 /**
- * 作品リストセクション
+ * パフォーマンスリストセクション
  */
-export const Works = () => (
-  <section id="works" className="py-32 px-12 bg-black text-white">
+export const Performance = () => (
+  <section id="performance" className="py-32 px-12 bg-black text-white">
     <div className="max-w-6xl mx-auto">
-      <h2 className="font-serif text-8xl italic mb-20 opacity-20">Works</h2>
+      <h2 className="font-serif text-8xl italic mb-20 opacity-20">Performance</h2>
       <div className="grid md:grid-cols-3 gap-12">
         {ARTIST_DATA.works.map((work, i) => (
           <div key={i} className="group">

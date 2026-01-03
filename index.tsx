@@ -6,7 +6,7 @@ import { BaseLayout } from './components/layout/BaseLayout';
 import { Navbar } from './components/navigation/Navbar';
 import { Hero } from './components/sections/Hero';
 import { About } from './components/sections/About';
-import { Works } from './components/sections/Works';
+import { Performance } from './components/sections/Performance';
 import { Studio } from './components/sections/Studio';
 import { Contact } from './components/sections/Contact';
 import { ARTIST_DATA } from './data/artistData';
@@ -19,7 +19,7 @@ const App = () => {
       <main className="flex-grow">
         <Hero />
         <About />
-        <Works />
+        <Performance />
         <Studio />
         <Contact />
       </main>

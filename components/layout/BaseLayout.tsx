@@ -11,7 +11,7 @@ interface BaseLayoutProps {
  */
 export const BaseLayout: React.FC<BaseLayoutProps> = ({ children }) => {
   return (
-    <div className="min-h-screen bg-[#e5e5e5] p-3 selection:bg-[#a78bfa]/30">
+    <div className="min-h-screen bg-[#e5e5e5] selection:bg-[#a78bfa]/30">
       <div className="min-h-[calc(100vh-24px)] relative flex flex-col overflow-hidden">
         {children}
       </div>

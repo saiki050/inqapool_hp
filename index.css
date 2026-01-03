@@ -1,0 +1,44 @@
+
+/**
+ * index.css
+ * サイト全体の「基礎」となるデザインをここに書きます。
+ */
+
+/* 1. サイト全体の基本設定 */
+body {
+  background-color: #e5e5e5; /* 落ち着いたグレーの背景 */
+  margin: 0;
+  /* Cormorant Garamond（セリフ体）を基本フォントにします */
+  font-family: 'Cormorant Garamond', serif;
+  /* 文字を滑らかに表示する設定 */
+  -webkit-font-smoothing: antialiased;
+  color: #000000;
+}
+
+/* 2. フォントの使い分け用クラス */
+/* 高級感のある明朝体（セリフ体） */
+.font-serif {
+  font-family: 'Cormorant Garamond', serif;
+}
+
+/* モダンで読みやすいゴシック体（サンセリフ体） */
+.font-sans {
+  font-family: 'Inter', sans-serif;
+}
+
+/* 3. 特殊な装飾 */
+/* スクロールバーのデザインを細く、紫色のアクセントに変更 */
+::-webkit-scrollbar {
+  width: 4px;
+}
+::-webkit-scrollbar-track {
+  background: #e5e5e5;
+}
+::-webkit-scrollbar-thumb {
+  background: #a78bfa; /* アーティストの象徴色：紫色 */
+}
+
+/* スムーズなスクロール（メニューをクリックした時にヌルッと動く） */
+html {
+  scroll-behavior: smooth;
+}

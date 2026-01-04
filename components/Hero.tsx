@@ -2,9 +2,6 @@
 import React from 'react';
 import { ARTIST_DATA } from '../data/artistData';
 
-const HERO_PRIMARY = new URL('../data/img/IMG_0705.png', import.meta.url).href;
-const HERO_SECONDARY = new URL('../data/img/IMG_0830.png', import.meta.url).href;
-
 /**
  * ヒーローセクション
  * 
@@ -16,6 +13,9 @@ const HERO_SECONDARY = new URL('../data/img/IMG_0830.png', import.meta.url).href
  *  - border-[#a78bfa]: 紫色の枠線をつける
  */
 export const Hero = () => {
+  const HERO_PRIMARY = ARTIST_DATA.heroImages?.primary;
+  const HERO_SECONDARY = ARTIST_DATA.heroImages?.secondary;
+
   return (
     <section className="min-h-screen flex flex-col lg:flex-row p-8 md:p-12 gap-12 items-start justify-between">
       
@@ -24,19 +24,23 @@ export const Hero = () => {
         
         {/* 上段画像：シンプルに白黒で表示 */}
         <div className="w-full aspect-[16/10] overflow-hidden grayscale">
-          <img 
-            src={HERO_PRIMARY} 
-            alt="Architecture View" 
-            className="w-full h-full object-cover"
-          />
+          {HERO_PRIMARY && (
+            <img 
+              src={HERO_PRIMARY} 
+              alt="Architecture View" 
+              className="w-full h-full object-cover"
+            />
+          )}
         </div>
         
         <div className="w-full aspect-[16/10] overflow-hidden">
-          <img 
-            src={HERO_SECONDARY} 
-            alt="Architecture Detail" 
-            className="w-full h-full object-cover grayscale"
-          />
+          {HERO_SECONDARY && (
+            <img 
+              src={HERO_SECONDARY} 
+              alt="Architecture Detail" 
+              className="w-full h-full object-cover grayscale"
+            />
+          )}
         </div>
       </div>
 

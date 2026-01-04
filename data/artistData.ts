@@ -3,7 +3,9 @@
  * アーティスト「inqapool」の全てのデータを管理するファイルです。
  * 情報を更新したい時は、このファイルを編集するだけでサイト全体に反映されます。
  */
-const image = (file: string) => new URL(`./img/${file}`, import.meta.url).href;
+const publicImage = (path: string) => `/images/${path}`;
+const heroImage = (file: string) => publicImage(`hero/${file}`);
+const performanceImage = (file: string) => publicImage(`performance/${file}`);
 
 export const ARTIST_DATA = {
   brand: "INQAPOOL",
@@ -12,6 +14,11 @@ export const ARTIST_DATA = {
   tagline: "Live / Sound Design",
   location: "Tokyo, Japan",
   email: "contact@inqapool.com",
+  heroImages: {
+    primary: heroImage('prof_01.jpeg'),
+    secondary: heroImage('prof_01.jpeg'),
+    stacked: heroImage('prof_01.jpeg'),
+  },
   socialLinks: [
     { name: 'Instagram', href: 'https://www.instagram.com/inqapool?igsh=MWo4bTBzeWNuZnZuZw%3D%3D&utm_source=qr' },
     { name: 'Bandcamp', href: 'https://inqapool.bandcamp.com' },
@@ -31,7 +38,7 @@ export const ARTIST_DATA = {
       year: '2025',
       type: 'Live Installation',
       images: [
-        image('rural_01.jpeg'),
+        performanceImage('rural_01.jpeg'),
       ],
     },
     {
@@ -39,9 +46,9 @@ export const ARTIST_DATA = {
       year: '2025',
       type: 'Kasamori temple',
       images: [
-        image('kasamori_01.jpeg'),
-        image('kasamori_02.jpeg'),
-        image('kasamori_03.jpeg'),
+        performanceImage('kasamori_01.jpeg'),
+        performanceImage('kasamori_02.jpeg'),
+        performanceImage('kasamori_03.jpeg'),
       ],
     },
   ],

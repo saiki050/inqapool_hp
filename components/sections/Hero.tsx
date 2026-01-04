@@ -43,7 +43,7 @@ export const Hero: React.FC = () => {
         {/* 下部のプロフィール情報 */}
         <div className="flex flex-col md:flex-row justify-between items-end mt-32 lg:mt-0 pt-16 border-t border-black/10">
           <div className="text-left">
-            <h2 className="text-4xl font-serif font-light tracking-tight">{ARTIST_DATA.name}</h2>
+            {/* <h2 className="text-4xl font-serif font-light tracking-tight">{ARTIST_DATA.name}</h2> */}
             <p className="text-xl italic opacity-40 font-serif mt-2">{ARTIST_DATA.role}</p>
           </div>
 

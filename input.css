@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: 'Brown Sugar';
+  src:
+    url('/fonts/Brown-Sugar/Brown-Sugar-Regular.woff2') format('woff2'),
+    url('/fonts/Brown-Sugar/Brown-Sugar-Regular.otf') format('opentype'),
+    url('/fonts/Brown-Sugar/Brown-Sugar-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@theme {
+  --font-serif: 'Brown Sugar', 'Cormorant Garamond', serif;
+  --font-sans: 'Inter', sans-serif;
+}
+
+@layer base {
+  body {
+    @apply bg-[#e5e5e5] text-black font-serif antialiased;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  ::-webkit-scrollbar {
+    width: 4px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #e5e5e5;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #a78bfa;
+  }
+}

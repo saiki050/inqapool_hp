@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { createRoot } from 'react-dom/client';
-import './index.css';
+import './input.css';
 import { BaseLayout } from './components/layout/BaseLayout';
 import { Navbar } from './components/navigation/Navbar';
 import { Hero } from './components/sections/Hero';

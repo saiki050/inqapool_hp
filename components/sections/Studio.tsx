@@ -4,6 +4,7 @@ import { ARTIST_DATA } from '../../data/artistData';
 
 export const Studio: React.FC = () => (
   <section id="studio" className="py-32 px-12 max-w-6xl mx-auto">
+    <h2 className="font-serif text-8xl italic opacity-20 select-none">Studio</h2>
     <h2 className="font-sans text-[10px] uppercase tracking-[0.4em] opacity-40 mb-12">Laboratory / Equipment</h2>
     <div className="grid md:grid-cols-3 gap-16">
       {ARTIST_DATA.studio.map((cat, i) => (

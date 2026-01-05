@@ -1,11 +1,37 @@
 
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 
 export const Navbar: React.FC = () => {
   const menuItems = ['About', 'Performance', 'Studio', 'Contact'];
+  const [hidden, setHidden] = useState(false);
+
+  useEffect(() => {
+    let lastY = window.scrollY;
+
+    const handleScroll = () => {
+      const currentY = window.scrollY;
+      const delta = currentY - lastY;
+
+      if (Math.abs(delta) < 8) return; // 小さな揺れは無視
+
+      if (currentY > 80 && delta > 0) {
+        setHidden(true);
+      } else {
+        setHidden(false);
+      }
+
+      lastY = currentY;
+    };
+
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   return (
-    <nav className="fixed top-0 left-0 w-full z-[100] px-12 md:px-20 pt-12 pb-8 pointer-events-none">
+    <nav
+      className={`fixed top-0 left-0 w-full z-[100] px-12 md:px-20 pt-12 pb-8 pointer-events-none transition-transform duration-500 ${hidden ? '-translate-y-full' : 'translate-y-0'
+        }`}
+    >
       <div className="flex justify-between items-center max-w-[1800px] mx-auto">
         <a href="#" className="pointer-events-auto font-serif text-4xl tracking-tighter hover:opacity-50 transition-all duration-500">
           inqapool

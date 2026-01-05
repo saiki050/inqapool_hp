@@ -3,7 +3,7 @@ import React from 'react';
 import { ARTIST_DATA } from '../../data/artistData';
 
 export const Performance: React.FC = () => (
-  <section id="performance" className="py-32 px-12 bg-black text-white">
+  <section id="performance" className="py-32 px-12 bg-black text-white" data-dark-bg>
     <div className="max-w-6xl mx-auto">
       <h2 className="font-serif text-8xl italic mb-20 opacity-20 select-none">Performance</h2>
 

@@ -54,7 +54,7 @@ const App = () => {
         <Hero />
         <About />
         <Performance />
-        <Studio />
+        {/* <Studio /> */}
         <Contact />
       </main>
 

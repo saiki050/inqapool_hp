@@ -10,7 +10,7 @@ export const Hero: React.FC = () => {
   const HERO_STACK_PRIMARY = ARTIST_DATA.heroImages?.stacked;
 
   return (
-    <section className="min-h-screen flex flex-col lg:flex-row pt-44 pb-32 px-10 md:px-20 lg:px-28 gap-20 lg:gap-32 items-start justify-between relative">
+    <section className="min-h-screen flex flex-col lg:flex-row pt-44 pb-32 px-10 md:px-20 lg:px-28 gap-20 lg:gap-40 items-start justify-between relative">
 
       {/* 左側：イメージスタック（幅を少し絞って余白を確保） */}
       <div className="w-full lg:w-[40%] flex flex-col relative z-10 -mt-6 lg:-mt-10">
@@ -44,7 +44,9 @@ export const Hero: React.FC = () => {
         <div className="flex flex-col md:flex-row justify-between items-end mt-32 lg:mt-0 pt-16 border-t border-black/10">
           <div className="text-left">
             {/* <h2 className="text-4xl font-serif font-light tracking-tight">{ARTIST_DATA.name}</h2> */}
-            <p className="text-xl italic opacity-40 font-serif mt-2">{ARTIST_DATA.role}</p>
+            <p className="text-xl italic opacity-40 font-serif mt-2 whitespace-pre-line">
+              {ARTIST_DATA.role}
+            </p>
           </div>
 
           <div className="mt-12 md:mt-0">

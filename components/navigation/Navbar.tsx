@@ -2,7 +2,11 @@
 import React, { useEffect, useState } from 'react';
 
 export const Navbar: React.FC = () => {
-  const menuItems = ['About', 'Picture', 'Studio', 'Links'];
+  const menuItems = [
+    { label: 'About', target: 'about' },
+    { label: 'Picture', target: 'performance' },
+    { label: 'Links', target: 'contact' },
+  ];
   const [hidden, setHidden] = useState(false);
   const [isDark, setIsDark] = useState(false);
 
@@ -68,13 +72,13 @@ export const Navbar: React.FC = () => {
         </a>
 
         <ul className="flex gap-12 pointer-events-auto items-center">
-          {menuItems.map((item) => (
-            <li key={item}>
+          {menuItems.map(({ label, target }) => (
+            <li key={label}>
               <a
-                href={`#${item.toLowerCase()}`}
+                href={`#${target}`}
                 className="group relative font-sans text-[12px] uppercase tracking-[0.3em] opacity-30 hover:opacity-100 transition-all duration-300 flex flex-col items-center"
               >
-                {item}
+                {label}
                 <span className="absolute -bottom-2 w-0 h-[1px] bg-[#a78bfa] transition-all duration-500 group-hover:w-full"></span>
               </a>
             </li>

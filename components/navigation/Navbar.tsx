@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from 'react';
 
 export const Navbar: React.FC = () => {
-  const menuItems = ['About', 'Performance', 'Studio', 'Contact'];
+  const menuItems = ['About', 'Picture', 'Studio', 'Links'];
   const [hidden, setHidden] = useState(false);
   const [isDark, setIsDark] = useState(false);
 

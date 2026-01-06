@@ -9,9 +9,9 @@ const performanceImage = (file: string) => publicImage(`performance/${file}`);
 
 export const ARTIST_DATA = {
   brand: "INQAPOOL",
-  // name: "Risako Taguchi",
-  role: "Ambient Artist",
-  tagline: "Live / Sound Design",
+  name: "Risako Taguchi",
+  role: "Artist, Performer,\nand educator working with synthesizers.",
+  tagline: "Electronic Sound Artist",
   location: "Tokyo, Japan",
   email: "contact@inqapool.com",
   heroImages: {
@@ -27,8 +27,10 @@ export const ARTIST_DATA = {
 
   // 自己紹介文（Aboutセクション用）
   bio: [
-    "Risako Taguchiによるプロジェクトinqapool（インカプール）は、シンセシスを「建築資材」として捉え、音の物理的次元を探求するアンビエント・シンセサイザー・アーティストです。",
-    "光の回折、幾何学的な空間構造、そして素材の質感からインスピレーションを受け、周波数を空間的な構造物へと彫刻するように構築します。彼女のサウンドは、静寂とノイズの境界線を漂うように設計されています。"
+    "InqapoolはRisako Taguchiのソロプロジェクト、Inqapoolは、大阪生まれ、東京拠点のアーティスト。モジュラーシンセサイザーによるライブパフォーマンスやDJセットを通して、深く重層的なサウンドスケープを紡ぎ出している。",
+    "2016年よりDJとして活動を開始。実験的エレクトロニクス、アンビエント、抽象的なリズムを横断するスタイルを軸に、日本国内に加え、上海やベルリンなどのクラブやライブハウス、ブランド主催のパーティをはじめとする幅広い文脈での出演実績を持つ。",
+    "ベルリンでの滞在を経て、モジュラーシンセサイザーを用いたライブパフォーマンスやオリジナル作品のリリースへと表現の幅を拡張。モジュラーシンセサイザーが持つ自由な特性を活かした、生々しさと即興性に満ちたライブパフォーマンスには定評があり、東京の電子音楽シーンからも信頼も厚い。近年では Tokyo Festival of Modular 2024、電子音楽に特化したキュレーションの野外フェスティバル rural 2025、重要文化財・笠森観音境内で開催されたアートティバル Kasamori Passing 2025 などに出演している。",
+    "また、空間的な音へのアプローチを活かし、楽曲提供やサウンド制作も行う。近年には、KORG 社のヒーリングサウンドインテリア ON・YU に音源を提供した。",
   ],
 
   // 作品リスト（Performanceセクション用）

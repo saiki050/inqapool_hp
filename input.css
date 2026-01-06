@@ -11,8 +11,13 @@
   font-display: swap;
 }
 
-@theme {
+/* @theme {
   --font-serif: 'Brown Sugar', 'Cormorant Garamond', serif;
+  --font-sans: 'Inter', sans-serif;
+} */
+
+@theme {
+  --font-serif: 'Cormorant Garamond', serif;
   --font-sans: 'Inter', sans-serif;
 }
 

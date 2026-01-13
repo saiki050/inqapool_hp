@@ -6,11 +6,12 @@
 const publicImage = (path: string) => `/images/${path}`;
 const heroImage = (file: string) => publicImage(`hero/${file}`);
 const performanceImage = (file: string) => publicImage(`performance/${file}`);
+const bioImage = (file: string) => publicImage(`bio/${file}`);
 
 export const ARTIST_DATA = {
-  brand: "INQAPOOL",
+  brand: "Inqapool",
   name: "Risako Taguchi",
-  role: "Artist, Performer,\nand educator working with synthesizers.",
+  role: "Synthesizer Performer",
   tagline: "Electronic Sound Artist",
   location: "Tokyo, Japan",
   email: "contact@inqapool.com",
@@ -19,6 +20,7 @@ export const ARTIST_DATA = {
     secondary: heroImage('prof_01.jpeg'),
     stacked: heroImage('prof_01.jpeg'),
   },
+  bioImage: bioImage('bio.jpeg'),
   socialLinks: [
     { name: 'Instagram', href: 'https://www.instagram.com/inqapool?igsh=MWo4bTBzeWNuZnZuZw%3D%3D&utm_source=qr' },
     { name: 'Bandcamp', href: 'https://inqapool.bandcamp.com' },
@@ -27,10 +29,12 @@ export const ARTIST_DATA = {
 
   // 自己紹介文（Aboutセクション用）
   bio: [
-    "InqapoolはRisako Taguchiのソロプロジェクト、Inqapoolは、大阪生まれ、東京拠点のアーティスト。モジュラーシンセサイザーによるライブパフォーマンスやDJセットを通して、深く重層的なサウンドスケープを紡ぎ出している。",
-    "2016年よりDJとして活動を開始。実験的エレクトロニクス、アンビエント、抽象的なリズムを横断するスタイルを軸に、日本国内に加え、上海やベルリンなどのクラブやライブハウス、ブランド主催のパーティをはじめとする幅広い文脈での出演実績を持つ。",
-    "ベルリンでの滞在を経て、モジュラーシンセサイザーを用いたライブパフォーマンスやオリジナル作品のリリースへと表現の幅を拡張。モジュラーシンセサイザーが持つ自由な特性を活かした、生々しさと即興性に満ちたライブパフォーマンスには定評があり、東京の電子音楽シーンからも信頼も厚い。近年では Tokyo Festival of Modular 2024、電子音楽に特化したキュレーションの野外フェスティバル rural 2025、重要文化財・笠森観音境内で開催されたアートティバル Kasamori Passing 2025 などに出演している。",
-    "また、空間的な音へのアプローチを活かし、楽曲提供やサウンド制作も行う。近年には、KORG 社のヒーリングサウンドインテリア ON・YU に音源を提供した。",
+    "Inqapool / Risako Taguchi",
+    "大阪出身、現在は東京を拠点に活動。モジュラーシンセサイザーを用いたライブパフォーマンス、およびDJセットを通じ、深く重層的なサウンドスケープを紡ぎ出すアーティストである。",
+    "2016年よりDJとしてのキャリアを始動。実験的なエレクトロニクス、アンビエント、抽象的なリズムを横断する独自のスタイルを軸に、ContactやWombといった国内の主要ベニューのみならず、上海やベルリンのクラブ、ライブハウス、さらにブランド主催のパーティなど、多種多様な文脈でプレイを重ねてきた。",
+    "その後、ベルリンでの滞在を契機に、モジュラーシンセサイザーを主軸としたライブパフォーマンスとオリジナル作品のリリースへと表現の幅を拡張。モジュラーシンセの自由な特性を最大限に活かした、生々しさと即興性に満ちたパフォーマンスには定評があり、東京の電子音楽シーンにおいて確かな信頼を獲得している。",
+    "その活動は多岐にわたり、近年ではモジュラーシンセの祭典「Tokyo Festival of Modular 2024」をはじめ、先鋭的なキュレーションで知られる野外フェスティバル「rural 2025」、さらには重要文化財・笠森観音境内を舞台としたアートフェスティバル「Kasamori Passing 2025」など、象徴的なイベントへの出演を果たしている。",
+    "また、音を空間的に捉えるアプローチを活かし、KORG社のヒーリングサウンドインテリア「ON・YU」への音源提供も行う。",
   ],
 
   // 作品リスト（Performanceセクション用）
@@ -41,6 +45,7 @@ export const ARTIST_DATA = {
       type: 'Live Installation',
       images: [
         performanceImage('rural_01.jpeg'),
+        performanceImage('rural_02.jpeg'),
       ],
     },
     {

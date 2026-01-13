@@ -32,7 +32,7 @@ export const Hero: React.FC = () => {
 
         {/* ブランドロゴ：重なりを防ぐためにclampの上限を調整 */}
         <div className="text-right flex flex-col items-end">
-          <h1 className="font-serif text-[clamp(4rem,12vw,10rem)] leading-[0.85] uppercase tracking-tighter select-none break-keep">
+          <h1 className="font-serif text-[clamp(4rem,12vw,10rem)] leading-[0.85] tracking-[0.04em] select-none break-keep">
             {ARTIST_DATA.brand}
           </h1>
           <p className="mt-8 font-sans text-[10px] uppercase tracking-[0.8em] opacity-30">
